@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.javafx.controller.SupervisorSearchController">
+   <children>
+      <TableView fx:id="thesisTable" editable="true" layoutX="25.0" layoutY="74.0" prefHeight="300.0" prefWidth="650.0">
+         <columns>
+            <TableColumn fx:id="title" prefWidth="200.0" text="Title" />
+            <TableColumn fx:id="year" prefWidth="100.0" text="Year" />
+            <TableColumn fx:id="supervisor" prefWidth="295.0" text="Supervisor" />
+         </columns>
+      </TableView>
+      <Label layoutX="319.0" layoutY="29.0" text="Topics">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="289.0" layoutY="626.0" mnemonicParsing="false" onAction="#backAction" prefHeight="51.0" prefWidth="122.0" text="Back">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <TextArea fx:id="descriptionArea" layoutX="25.0" layoutY="392.0" prefHeight="200.0" prefWidth="650.0" />
+   </children>
+</Pane>

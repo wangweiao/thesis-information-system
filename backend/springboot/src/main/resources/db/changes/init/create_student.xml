@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="postgres" id="create_student_table">
+
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="student" />
+            </not>
+        </preConditions>
+
+        <createTable tableName="student">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="student_pk" />
+            </column>
+
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="faculty" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="username" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="password" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+
+        </createTable>
+
+    </changeSet>
+
+<!--    <changeSet id="2" author="postgres">-->
+<!--        <insert tableName="student">-->
+<!--            <column name="id" value="0" />-->
+<!--            <column name="name" value="Will" />-->
+<!--            <column name="email" value="will@gmail.com" />-->
+<!--        </insert>-->
+<!--    </changeSet>-->
+
+</databaseChangeLog>

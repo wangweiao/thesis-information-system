@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../css/opening.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.javafx.controller.SupervisorIndexController">
+   <children>
+      <Pane fx:id="transparentBackground" layoutX="410.0" layoutY="208.0" prefHeight="305.0" prefWidth="415.0" />
+      <ImageView fx:id="background" fitHeight="800.0" fitWidth="1200.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="titleLabel" layoutX="328.0" layoutY="79.0" prefHeight="80.0" prefWidth="603.0" text="Supervisor Index">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="553.0" layoutY="228.0" mnemonicParsing="false" onAction="#chatAction" prefHeight="40.0" prefWidth="130.0" text="Chat">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="errorLabel" layoutX="473.0" layoutY="485.0" prefHeight="26.0" prefWidth="278.0" textAlignment="CENTER" textFill="#e30e0e" />
+      <Button layoutX="553.0" layoutY="290.0" mnemonicParsing="false" onAction="#searchAction" prefHeight="40.0" prefWidth="130.0" text="Search" />
+      <Button layoutX="553.0" layoutY="344.0" mnemonicParsing="false" onAction="#submitAction" prefHeight="40.0" prefWidth="130.0" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="553.0" layoutY="452.0" mnemonicParsing="false" onAction="#signOutAction" prefHeight="40.0" prefWidth="130.0" text="Sign Out">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="553.0" layoutY="400.0" mnemonicParsing="false" onAction="#topicAction" prefHeight="40.0" prefWidth="130.0" text="Topics">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

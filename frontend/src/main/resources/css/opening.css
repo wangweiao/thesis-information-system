@@ -1,0 +1,54 @@
+#body {
+    -fx-background-image: url('/images/img.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-padding: 20px;
+}
+
+Label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+Label#titleLabel {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f0f17;
+    -fx-alignment: center;
+}
+
+Label#errorLabel {
+    -fx-text-fill: #e30e0e;
+    -fx-font-weight: bold;
+}
+
+TextField, PasswordField {
+    -fx-border-color: #0f0f17;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+Button {
+    -fx-background-color: #1fcf58;
+    -fx-text-fill: #0f0f17;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-background-color: #4b76c5;
+}
+
+#transparentBackground {
+    -fx-background-color: rgba(226, 232, 241, 0.8); /* Semi-transparent blue */
+    -fx-border-color: rgba(0, 0, 0, 0.2);          /* Optional: Add a subtle border */
+    -fx-border-width: 1px;                         /* Optional: Set the border thickness */
+    -fx-border-radius: 10px;                       /* Optional: Round the corners */
+    -fx-background-radius: 10px;                   /* Ensure background matches rounded corners */
+}
+
